@@ -1,4 +1,4 @@
-# Remark Accessible PDF
+# Remark (More) Accessible PDF
 
 Render markdown to a PDF using remark and pdfkit.
 
