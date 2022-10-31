@@ -1,9 +1,21 @@
 # Remark Accessible PDF
 
-Experiment to render markdown to a PDF using remark and pdfkit.
+Render markdown to a PDF using remark and pdfkit.
 
-Inspired by [remark-pdf](https://github.com/inokawa/remark-pdf) but focusing on good default styling and accessible output.
+```bash
+npm install NickColley/remark-accessible-pdf
+```
 
-Currently pretty broken and not remotely good enought to use in anything serious.
+See the [example for how to use remark-accessible-pdf](./example/index.js).
 
-Not even tested it with assistive technologies at this point so it could be completely pointless! Come back later.
+## Development status
+
+Not stable, it needs:
+
+- testing with screen readers
+- more markdown features supported
+- more test examples
+
+## What's the difference between this and [remark-pdf](https://github.com/inokawa/remark-pdf)?
+
+Focus on ensuring the output is accessible including good default styling.
