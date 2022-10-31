@@ -23,10 +23,6 @@ async function createPdf() {
 createPdf();
 ```
 
-```bash
-node index.js
-```
-
 See the [example for how to use remark-accessible-pdf](./example/index.js).
 
 ## Development status
