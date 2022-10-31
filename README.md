@@ -2,6 +2,8 @@
 
 Render markdown to a PDF using remark and pdfkit.
 
+PDFs are not accessible, use HTML, I was just bored and wondered if this was possible.
+
 ```bash
 npm install NickColley/remark-accessible-pdf
 ```
