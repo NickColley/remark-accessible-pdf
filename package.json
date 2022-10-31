@@ -1,0 +1,21 @@
+{
+  "type": "module",
+  "name": "remark-accessible-pdf",
+  "version": "0.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "fast-blob-stream": "^1.1.1",
+    "pdfkit": "^0.13.0",
+    "remark-parse": "^10.0.1",
+    "to-vfile": "^7.2.3",
+    "unified": "^10.1.2",
+    "unist-builder": "^3.0.0"
+  }
+}
