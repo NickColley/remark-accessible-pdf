@@ -1,17 +1,14 @@
 import { unified } from "unified";
-import remarkParse from "remark-parse";
 import { toVFile, read } from "to-vfile";
+import remarkParse from "remark-parse";
+import remarkAccessiblePDF from "../index.js";
 
-import remarkPdf from "../index.js";
-
-console.log();
-
-async function main() {
-  const file = await read(toVFile("./example/input.md"));
+async function createPdf() {
+  const inputFile = await read(toVFile("./example/input.md"));
   await unified()
     .use(remarkParse)
-    .use(remarkPdf, { output: "output.pdf" })
-    .process(file);
+    .use(remarkAccessiblePDF, { output: "output.pdf" })
+    .process(inputFile);
 }
 
-main();
+createPdf();

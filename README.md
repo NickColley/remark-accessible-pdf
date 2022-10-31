@@ -6,6 +6,27 @@ Render markdown to a PDF using remark and pdfkit.
 npm install NickColley/remark-accessible-pdf
 ```
 
+```javascript
+import { unified } from "unified";
+import { toVFile, read } from "to-vfile";
+import remarkParse from "remark-parse";
+import remarkAccessiblePDF from "remark-accessible-pdf";
+
+async function createPdf() {
+  const inputFile = await read(toVFile("./example/input.md"));
+  await unified()
+    .use(remarkParse)
+    .use(remarkAccessiblePDF, { output: "output.pdf" })
+    .process(inputFile);
+}
+
+createPdf();
+```
+
+```bash
+node index.js
+```
+
 See the [example for how to use remark-accessible-pdf](./example/index.js).
 
 ## Development status
